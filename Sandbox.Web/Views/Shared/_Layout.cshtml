@@ -18,6 +18,11 @@
                 </button>
                 @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
             </div>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="mainSearch" placeholder="Search">
+                </div>
+            </form>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -36,7 +41,9 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/typeahead")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/sandbox")
     @RenderSection("scripts", required: false)
 </body>
 </html>
