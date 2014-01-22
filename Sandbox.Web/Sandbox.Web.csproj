@@ -155,8 +155,19 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\SiteMessage.cshtml" />
+    <Content Include="Views\Shared\Message.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Sandbox.Common\Sandbox.Common.csproj">
+      <Project>{3e25ee05-6618-4a62-9cbe-bbe772e3aa41}</Project>
+      <Name>Sandbox.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sandbox.Web.Mvc.Views\Sandbox.Web.Mvc.Views.csproj">
+      <Project>{feb7b864-ee7d-410e-95c9-886048e7301b}</Project>
+      <Name>Sandbox.Web.Mvc.Views</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
