@@ -27,7 +27,7 @@ namespace Sandbox.Web
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/sass-bootstrap.css",
                       "~/Content/site.css"));
         }
     }
