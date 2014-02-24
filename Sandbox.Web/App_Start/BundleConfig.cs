@@ -12,7 +12,7 @@ namespace Sandbox.Web
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/typeahead").Include(
-                        "~/Scripts/typeahead.js"));
+                        "~/Scripts/typeahead.bundle.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/sandbox").Include(
                         "~/Scripts/sandbox.js"));

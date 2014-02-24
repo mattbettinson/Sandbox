@@ -43,68 +43,110 @@ input[type="checkbox"].input-validation-error {
 
 /* Sandbox */
 
+/* Typeahead - bootstrap 3.0 doesn't have full support for Typeahead, so the following custom CSS is required'*/
+/* line 68, sass/oxygen.web.scss */
 .typeahead,
 .tt-query,
 .tt-hint {
-  width: 396px;
-  height: 30px;
+  width: 161px;
+  height: 34px;
   padding: 8px 12px;
   /*font-size: 24px;*/
-  line-height: 30px;
-  border: 2px solid #ccc;
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   outline: none;
 }
 
+/* line 81, sass/oxygen.web.scss */
+.twitter-typeahead {
+  width: 161px;
+}
+
+/* line 85, sass/oxygen.web.scss */
 .typeahead {
   background-color: #fff;
 }
 
+/* line 89, sass/oxygen.web.scss */
 .typeahead:focus {
   border: 2px solid #0097cf;
 }
 
+/* line 93, sass/oxygen.web.scss */
 .tt-query {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
+/* line 99, sass/oxygen.web.scss */
 .tt-hint {
-  color: #999
+  color: #999999;
 }
 
+/* line 103, sass/oxygen.web.scss */
 .tt-dropdown-menu {
-  width: 422px;
+  width: 482px;
   margin-top: 12px;
   padding: 8px 0;
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
-  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* line 118, sass/oxygen.web.scss */
 .tt-suggestion {
   padding: 3px 20px;
   /*font-size: 18px;*/
   line-height: 24px;
 }
 
+/* line 124, sass/oxygen.web.scss */
 .tt-suggestion.tt-is-under-cursor {
   color: #fff;
   background-color: #0097cf;
-
 }
 
+/* line 130, sass/oxygen.web.scss */
 .tt-suggestion p, .tt-suggestion hr {
   margin: 0;
+}
+
+/* line 134, sass/oxygen.web.scss */
+.tt-suggestion:nth-child(even) {
+  background: #eeeeee;
+}
+
+/* line 138, sass/oxygen.web.scss */
+.search-header {
+  font-weight: bold;
+}
+
+/* line 142, sass/oxygen.web.scss */
+.search-label {
+  font-weight: bold;
+}
+
+/* Selector has increased specificity over a bootstrap class which removes rounded corners if the form element is not
+    the last element amongst it's children (so boxes seamlessly join) - however, typeahead adds additional elements to the DOM
+    meaning that the search box then loses it's right hand side rounded corners */
+/* line 149, sass/oxygen.web.scss */
+.navbar .search .twitter-typeahead .tt-query {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .search-header {
