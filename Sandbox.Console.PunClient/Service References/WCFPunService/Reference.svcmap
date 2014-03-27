@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b091dd5-0e98-445c-bab6-e2d9f1a5688a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55515/PunService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PunService.xsd" MetadataType="Schema" ID="8c5d2aa4-b2d6-4e17-a3fd-c5e7f43e5366" SourceId="1" SourceUrl="http://localhost:55515/PunService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PunService1.xsd" MetadataType="Schema" ID="8158d4b8-f36d-488b-ba3e-36f5f1ad1a9d" SourceId="1" SourceUrl="http://localhost:55515/PunService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PunService2.xsd" MetadataType="Schema" ID="4e61ce47-01d1-4aa6-8b36-2df1432208c8" SourceId="1" SourceUrl="http://localhost:55515/PunService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PunService.wsdl" MetadataType="Wsdl" ID="0409f853-81b8-4ba1-8862-55a190ce9132" SourceId="1" SourceUrl="http://localhost:55515/PunService.svc?wsdl" />
+    <MetadataFile FileName="PunService.disco" MetadataType="Disco" ID="9eaf971a-2a1f-40fd-a16a-e7a57e336b6b" SourceId="1" SourceUrl="http://localhost:55515/PunService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

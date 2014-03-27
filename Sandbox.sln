@@ -1,13 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Web", "Sandbox.Web\Sandbox.Web.csproj", "{36FAC2E4-9BC3-4544-8C3E-A7E50543F04E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Common", "Sandbox.Common\Sandbox.Common.csproj", "{3E25EE05-6618-4A62-9CBE-BBE772E3AA41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Web.Mvc.Views", "Sandbox.Web.Mvc.Views\Sandbox.Web.Mvc.Views.csproj", "{FEB7B864-EE7D-410E-95C9-886048E7301B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.WebServices.WCF", "Sandbox.WebServices.WCF\Sandbox.WebServices.WCF.csproj", "{A9BDF8C6-1053-47C5-B915-EFC2D56BC184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Data", "Sandbox.Data\Sandbox.Data.csproj", "{151F4821-E5F0-4B9F-AAF4-3D6509F581E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Console.PunClient", "Sandbox.Console.PunClient\Sandbox.Console.PunClient.csproj", "{F3DB0ECA-4E85-4E41-84E7-CB8505114407}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9BDF8C6-1053-47C5-B915-EFC2D56BC184} = {A9BDF8C6-1053-47C5-B915-EFC2D56BC184}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +36,18 @@ Global
 		{FEB7B864-EE7D-410E-95C9-886048E7301B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB7B864-EE7D-410E-95C9-886048E7301B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB7B864-EE7D-410E-95C9-886048E7301B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9BDF8C6-1053-47C5-B915-EFC2D56BC184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BDF8C6-1053-47C5-B915-EFC2D56BC184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BDF8C6-1053-47C5-B915-EFC2D56BC184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BDF8C6-1053-47C5-B915-EFC2D56BC184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151F4821-E5F0-4B9F-AAF4-3D6509F581E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151F4821-E5F0-4B9F-AAF4-3D6509F581E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151F4821-E5F0-4B9F-AAF4-3D6509F581E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151F4821-E5F0-4B9F-AAF4-3D6509F581E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3DB0ECA-4E85-4E41-84E7-CB8505114407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DB0ECA-4E85-4E41-84E7-CB8505114407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DB0ECA-4E85-4E41-84E7-CB8505114407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DB0ECA-4E85-4E41-84E7-CB8505114407}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
